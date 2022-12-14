@@ -1,3 +1,4 @@
+import expenseDate from "./ExpenseDate";
 import "./ExpenseItem.css";
 
 function ExpenseItem(props) {
@@ -5,6 +6,7 @@ function ExpenseItem(props) {
   // will receive values from app.js components expenseItem
   return (
     <div className="expense-item">
+      <expenseDate date={props.title}></expenseDate>
       <div>{props.id}</div>
       <div className="expense-item__description">
         <h2>{props.title}</h2>
